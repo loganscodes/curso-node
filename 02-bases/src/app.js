@@ -14,18 +14,28 @@
 // });
 
 
-const { buildMakePerson } = require('./js-foundation/05-factory')
+// const { buildMakePerson } = require('./js-foundation/05-factory')
 
-const { getUUID, getAge } = require('./plugins')
+// const { getUUID, getAge } = require('./plugins')
 
-const makePerson = buildMakePerson({getUUID, getAge})
+// const makePerson = buildMakePerson({getUUID, getAge})
 
-const obj = { name: 'Ducket', birthdate: '1985-10-21' }
+// const obj = { name: 'Ducket', birthdate: '1985-10-21' }
 
-const john = makePerson(obj)
+// const john = makePerson(obj)
 
-console.log(john)
+// console.log(john)
 
+
+
+const getPokemonById = require('./js-foundation/06-promises')
+
+// console.log(getPokemonById(1))
+
+getPokemonById(151)
+    .then( (pokemon) => console.log({ pokemon }) )
+    .catch((err) => console.log(err))
+    .finally( () => console.log('Termina'))
 
 
 
