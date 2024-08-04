@@ -28,15 +28,18 @@
 
 
 
-const getPokemonById = require('./js-foundation/06-promises')
+// const getPokemonById = require('./js-foundation/06-promises')
 
 // console.log(getPokemonById(1))
 
-getPokemonById(151)
-    .then( (pokemon) => console.log({ pokemon }) )
-    .catch((err) => console.log(err))
-    .finally( () => console.log('Termina'))
+// getPokemonById(151)
+//     .then( (pokemon) => console.log({ pokemon }) )
+//     .catch((err) => console.error(err))
+//     .finally( () => console.log('Termina'))
 
 
+const { buildLogger } = require('./plugins')
 
+const logger = buildLogger('app.js')
 
+logger.log('Hola Mundo')
