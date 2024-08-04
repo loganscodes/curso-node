@@ -1,3 +1,4 @@
-02-bases/node_modules
-*.log
 .DS_Store
+02-bases/node_modules
+02-bases/*.log
+03-typescript/node_modules
